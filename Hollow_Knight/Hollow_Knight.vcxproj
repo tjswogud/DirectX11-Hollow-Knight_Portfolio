@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{cacf7980-09a6-479c-8c60-1449967fc0ed}</ProjectGuid>
+    <RootNamespace>HollowKnight</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Framework.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>./;$(ProjectDir)_Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)_Lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Framework.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>./;$(ProjectDir)_Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)_Lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Hollow_Knight\AttackSlash.h" />
+    <ClInclude Include="Objects\Effect\Effect.h" />
+    <ClInclude Include="Objects\Effect\EffectManager.h" />
+    <ClInclude Include="Scenes\MapScene.h" />
+    <ClInclude Include="Hollow_Knight\EnemyManager.h" />
+    <ClInclude Include="Hollow_Knight\Boss.h" />
+    <ClInclude Include="Collision\Collider.h" />
+    <ClInclude Include="Collision\ColliderCircle.h" />
+    <ClInclude Include="Collision\ColliderRect.h" />
+    <ClInclude Include="Hollow_Knight\Enemy.h" />
+    <ClInclude Include="Environment\Camera.h" />
+    <ClInclude Include="Environment\Environment.h" />
+    <ClInclude Include="Framework.h" />
+    <ClInclude Include="GameObject\Battle\Mario.h" />
+    <ClInclude Include="GameObject\Character.h" />
+    <ClInclude Include="GameObject\Plane\Plane.h" />
+    <ClInclude Include="GameObject\SolarSystem\Planet.h" />
+    <ClInclude Include="Hollow_Knight\Knight.h" />
+    <ClInclude Include="Hollow_Knight\Map.h" />
+    <ClInclude Include="Scenes\HollowScene.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="MainGame.h" />
+    <ClInclude Include="Objects\Basic\Object.h" />
+    <ClInclude Include="Objects\Basic\Polygons.h" />
+    <ClInclude Include="Objects\Transform.h" />
+    <ClInclude Include="Objects\Vector2.h" />
+    <ClInclude Include="Renders\Buffers\ConstantBuffer.h" />
+    <ClInclude Include="Renders\Buffers\GlobalBuffer.h" />
+    <ClInclude Include="Renders\Buffers\IndexBuffer.h" />
+    <ClInclude Include="Renders\Buffers\VertexBuffer.h" />
+    <ClInclude Include="Renders\Buffers\VertexLayouts.h" />
+    <ClInclude Include="Renders\Shaders\PixelShader.h" />
+    <ClInclude Include="Renders\Shaders\VertexShader.h" />
+    <ClInclude Include="Renders\Texture\Animation.h" />
+    <ClInclude Include="Renders\Texture\Frame.h" />
+    <ClInclude Include="Renders\Texture\Texture.h" />
+    <ClInclude Include="Hollow_Knight\SkillManager.h" />
+    <ClInclude Include="Hollow_Knight\Skill.h" />
+    <ClInclude Include="Utilities\Math.h" />
+    <ClInclude Include="__Others\Resource.h" />
+    <ClInclude Include="Scenes\AnimationScene.h" />
+    <ClInclude Include="Scenes\CollisionScene.h" />
+    <ClInclude Include="Scenes\Scene.h" />
+    <ClInclude Include="Scenes\SolarScene.h" />
+    <ClInclude Include="Scenes\TextureScene.h" />
+    <ClInclude Include="Scenes\TutorialScene.h" />
+    <ClInclude Include="Scenes\WorldScene.h" />
+    <ClInclude Include="Systems\Device.h" />
+    <ClInclude Include="__Others\targetver.h" />
+    <ClInclude Include="Utilities\Keyboard.h" />
+    <ClInclude Include="Utilities\Singleton.h" />
+    <ClInclude Include="Utilities\Time.h" />
+    <ClInclude Include="_Include\DirectXTex\DirectXTex.h" />
+    <ClInclude Include="_Include\ImGui\imconfig.h" />
+    <ClInclude Include="_Include\ImGui\imgui.h" />
+    <ClInclude Include="_Include\ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="_Include\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="_Include\ImGui\imgui_internal.h" />
+    <ClInclude Include="_Include\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="_Include\ImGui\imstb_textedit.h" />
+    <ClInclude Include="_Include\ImGui\imstb_truetype.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Hollow_Knight\AttackSlash.cpp" />
+    <ClCompile Include="Objects\Effect\Effect.cpp" />
+    <ClCompile Include="Objects\Effect\EffectManager.cpp" />
+    <ClCompile Include="Scenes\MapScene.cpp" />
+    <ClCompile Include="Hollow_Knight\EnemyManager.cpp" />
+    <ClCompile Include="Hollow_Knight\Boss.cpp" />
+    <ClCompile Include="Collision\Collider.cpp" />
+    <ClCompile Include="Collision\ColliderCircle.cpp" />
+    <ClCompile Include="Collision\ColliderRect.cpp" />
+    <ClCompile Include="Hollow_Knight\Enemy.cpp" />
+    <ClCompile Include="Environment\Camera.cpp" />
+    <ClCompile Include="Environment\Environment.cpp" />
+    <ClCompile Include="Framework.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GameObject\Battle\Mario.cpp" />
+    <ClCompile Include="GameObject\Character.cpp" />
+    <ClCompile Include="GameObject\Plane\Plane.cpp" />
+    <ClCompile Include="GameObject\SolarSystem\Planet.cpp" />
+    <ClCompile Include="Hollow_Knight\Knight.cpp" />
+    <ClCompile Include="Hollow_Knight\Map.cpp" />
+    <ClCompile Include="Scenes\HollowScene.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MainGame.cpp" />
+    <ClCompile Include="Objects\Basic\Object.cpp" />
+    <ClCompile Include="Objects\Basic\Polygons.cpp" />
+    <ClCompile Include="Objects\Transform.cpp" />
+    <ClCompile Include="Objects\Vector2.cpp" />
+    <ClCompile Include="Renders\Buffers\ConstantBuffer.cpp" />
+    <ClCompile Include="Renders\Buffers\IndexBuffer.cpp" />
+    <ClCompile Include="Renders\Buffers\VertexBuffer.cpp" />
+    <ClCompile Include="Renders\Buffers\VertexLayouts.cpp" />
+    <ClCompile Include="Renders\Shaders\PixelShader.cpp" />
+    <ClCompile Include="Renders\Shaders\VertexShader.cpp" />
+    <ClCompile Include="Renders\Texture\Animation.cpp" />
+    <ClCompile Include="Renders\Texture\Frame.cpp" />
+    <ClCompile Include="Renders\Texture\Texture.cpp" />
+    <ClCompile Include="Scenes\AnimationScene.cpp" />
+    <ClCompile Include="Scenes\CollisionScene.cpp" />
+    <ClCompile Include="Scenes\SolarScene.cpp" />
+    <ClCompile Include="Scenes\TextureScene.cpp" />
+    <ClCompile Include="Scenes\TutorialScene.cpp" />
+    <ClCompile Include="Scenes\WorldScene.cpp" />
+    <ClCompile Include="Hollow_Knight\SkillManager.cpp" />
+    <ClCompile Include="Hollow_Knight\Skill.cpp" />
+    <ClCompile Include="Systems\Device.cpp" />
+    <ClCompile Include="Utilities\Keyboard.cpp" />
+    <ClCompile Include="Utilities\Math.cpp" />
+    <ClCompile Include="Utilities\Time.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="__Others\Hollow_Knight.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="__Others\Hollow_Knight.ico" />
+    <Image Include="__Others\small.ico" />
+    <Image Include="_Textures\airplane.png" />
+    <Image Include="_Textures\background.png" />
+    <Image Include="_Textures\mario_all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="__Others\imgui.ini" />
+    <None Include="_Include\DirectXTex\DirectXTex.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="_Shaders\PixelColor.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="_Shaders\PixelLine.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="_Shaders\PixelTexture.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">PS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="_Shaders\Tutorial.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">VS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="_Shaders\VertexColor.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">VS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="_Shaders\VertexLine.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">VS</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+    </FxCompile>
+    <FxCompile Include="_Shaders\VertexTexture.hlsl">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">VS</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VS</EntryPointName>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">5.0</ShaderModel>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="_Lib\DirectXTex\DirectXTex.lib" />
+    <Library Include="_Lib\ImGui\ImGui.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

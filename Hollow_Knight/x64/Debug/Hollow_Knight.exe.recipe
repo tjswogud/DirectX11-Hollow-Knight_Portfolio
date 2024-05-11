@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\je-2023\Desktop\Hollow_Knight\x64\Debug\Hollow_Knight.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>C:\Users\je-2023\Desktop\Hollow_Knight\x64\Debug\PixelColor.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\je-2023\Desktop\Hollow_Knight\x64\Debug\PixelLine.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\je-2023\Desktop\Hollow_Knight\x64\Debug\PixelTexture.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\je-2023\Desktop\Hollow_Knight\x64\Debug\Tutorial.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\je-2023\Desktop\Hollow_Knight\x64\Debug\VertexColor.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\je-2023\Desktop\Hollow_Knight\x64\Debug\VertexLine.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>C:\Users\je-2023\Desktop\Hollow_Knight\x64\Debug\VertexTexture.cso</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>
